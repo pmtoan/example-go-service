@@ -1,0 +1,14 @@
+version: '3'
+services:
+  example-go-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: example-go-service
+    container_name: example-go-service
+    restart: always
+    tty: true
+    ports:
+      - "8080:8080"
+#    volumes:
+
