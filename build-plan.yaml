@@ -1,0 +1,10 @@
+version: 1
+name: example-go-service
+os:
+  distribution: golang
+  version: 1.13
+path: /go/src/github.com/pmtoan/example-go-service
+steps:
+  - apt update
+  - apt install vim
+  - go build main.go
