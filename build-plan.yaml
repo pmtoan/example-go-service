@@ -6,5 +6,5 @@ os:
 path: /go/src/github.com/pmtoan/example-go-service
 steps:
   - apt update
-  - apt install vim
+  - apt install -y vim
   - go build main.go
